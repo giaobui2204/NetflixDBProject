@@ -23,17 +23,16 @@ This project is a simplified backend model of a **Netflix-style movie streaming 
 
 ## 📂 Folder Structure
 
-NetflixDBProject/ ├── lib/ │ └── sqlite-jdbc-<version>.jar ├── src/ │ ├── Main.java │ ├── dao/ │ │ ├── DBConnection.java │ │ ├── SubscriptionDAO.java │ │ ├── UserDAO.java │ │ ├── MovieDAO.java │ │ ├── GenreDAO.java │ │ └── WatchHistoryDAO.java │ └── model/ │ ├── Subscription.java │ ├── User.java │ ├── Movie.java │ ├── Genre.java │ └── WatchHistory.java
-
+<pre> ```text NetflixDBProject/ ├── lib/ │ └── sqlite-jdbc-3.49.1.0.jar ├── src/ │ ├── Main.java │ ├── dao/ │ │ ├── DBConnection.java │ │ ├── SubscriptionDAO.java │ │ ├── UserDAO.java │ │ ├── MovieDAO.java │ │ ├── GenreDAO.java │ │ └── WatchHistoryDAO.java │ └── model/ │ ├── Subscription.java │ ├── User.java │ ├── Movie.java │ ├── Genre.java │ └── WatchHistory.java ``` </pre>
 
 ## 🧪 How to Run
 
 ### 1. Compile
-
 ```bash
 find src -name "*.java" | xargs javac -cp "lib/sqlite-jdbc-3.49.1.0.jar" -d bin
-
+```
 ### 2. Run
-
-```bash 
+```bash
 java -cp "bin:lib/sqlite-jdbc-3.49.1.0.jar" Main
+```
+
