@@ -52,6 +52,27 @@ public class MovieDAO{
         }
     }
 
-    
+    public List<Movie> getAllMovies(){
+        List<Movie> list = new ArrayList<>();
+        String sql = "SELECT * FROM Movie";
+
+        try (Connection conn = DBConnection.connect(); Statement stmt = conn.createStatement(); ResultSet rs = stmt.executeQuery(sql)){
+            while (rs.next()){
+                list.add(new Movie(
+                    rs.getInt("movie_id"),
+                    rs.getString("title"),
+                    rs.getString("description"),
+                    rs.getInt("release_year"),
+                    rs.getInt("genre_id"),
+                    rs.getDouble("rating"),
+                    rs.getInt("duration")
+                ));
+            }    
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+        return list;
+    }
+
 
 }
