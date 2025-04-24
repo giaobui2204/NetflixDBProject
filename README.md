@@ -1,6 +1,6 @@
 # NetflixDBProject 🎬
 
-This project is a simplified backend model of a **Netflix-style movie streaming system** implemented in Java using **SQLite** as the database. The design is based on relational database modeling and follows **Version 2** of the sample implementation pattern — using **JDBC** with a **DAO (Data Access Object)** architecture for clean separation of concerns.
+This project is a simplified backend model of a **Netflix-style movie streaming system** implemented in Java using **SQLite** as the database. The design is based on relational database modeling and follows the method using **JDBC** with a **DAO (Data Access Object)** architecture for clean separation of concerns.
 
 ## 📌 Features
 
