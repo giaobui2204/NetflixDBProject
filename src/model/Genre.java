@@ -27,7 +27,6 @@ public class Genre {
     public void setDescription(String description) { this.description = description; }
 
     public Object getGenreIdByName() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getGenreIdByName'");
     }
 }

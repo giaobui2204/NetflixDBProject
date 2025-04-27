@@ -66,7 +66,7 @@ public class Main {
                     List<Genre> genres = genreDAO.getAllGenres();
                     for (Genre g : genres) {
                         System.out.printf("Genre ID: %d | Name: %s | Description: %s%n",
-                            g.getGenreIdByName(), g.getName(), g.getDescription());
+                            g.getGenre_id(), g.getName(), g.getDescription());
                     }
                     break;
                 case 3:
